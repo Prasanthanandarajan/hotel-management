@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BILLING</title>
+    <link rel="stylesheet" href="styles/stylebill.css" />
+    <script src="javascript/bill.js"></script>
+    
+  </head>
+
+  <body >
+    <form action="">
+      <div class="navbar">
+   
+        <div class="subnav">
+          <button class="subnavbtn"> Hotel <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+              <a href="hotelbooking.html">Hotel Booking</a>
+              <a href="roommaintenance.html">Room Maintenance</a>
+              <a href="roomcancellation.html">Room Cancellation</a>
+              <a href="reception.html">Reception </a>
+              <a href="bar.html">Bar </a>
+            </div>
+        </div>
+    <div class="subnav">
+      <button class="subnavbtn">Food <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="bill.html">Billing</a>
+        <a href="Food_Mastry.html">Food Master</a>
+        <a href="dining.html">Dining</a>
+        <a href="parcel.html">Parcel</a>
+        <a href="online.html">Online Orders</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Accounts <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="Expenses_Entry.html">Expenses Entry</a>
+        <a href="Groceries_Entry.html">Groceries Entry</a>
+        <a href="Gas_Maintenance.html">Gas Maintenance</a>
+        <a href="Income_Entry.html">Income Entry</a>
+      <a href="Advertisement.html">Advertisement</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        RMS <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="workers application form.html">Workers Application </a>
+        <a href="veseel maintenance.html">Vessel</a>
+        <a href="workers attendance form.html">Workers Attendance</a>
+        <a href="workers salary form.html">Workers Salary</a>
+        </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        Stocks <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="stock entry.html">Stock Entry</a>
+        </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        MISC. <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="Parking form.html">Parking</a>
+        
+        </div>
+    </div>
+    <a href="Login_Page.html">Logout</a>
+    </div>
+
+      <center><h1>Bill Details</h1>
+
+
+
+      <table border="1px" cellpadding="12" class="t1">
+        <tr>
+          <th>BILL NO</th>
+          <th>ITEM NAME</th>
+          <th>QUANTITY</th>
+          <th>PRICE</th>
+          <th>TOTAL</th>
+        </tr>
+        <tr>
+          <td rowspan="4"><input type="text" name="bill_no" id="bill_no"  required/></td>
+          <td><select name="foodlist" id="foodlist" onchange="foodprice()" required>
+            <option value="">--Select--</option>
+            <option value="Curd">Curd</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Briyani">Briyani</option>
+            <option value="Diner Grill">Diner Grill</option>
+            <option value="Unique Meals">Unique Meals</option>
+            <option value="Pizza Posse">Pizza Posse</option>
+          </select></td>
+          <td><input type="text" name="quantity" id="quantity"  oninput="myFunction()" required/></td>
+          <td><input type="text" name="selectNumber" id="selectNumber" value="" required /></td>
+          <td><input type="text" name="total" id="total" required/></td>
+        </tr>
+        <tr>
+
+          <td><select name="" id="foodlist1" onchange="foodprice1()" required>
+            <option value="">--Select--</option>
+            <option value="Curd">Curd</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Briyani">Briyani</option>
+            <option value="Diner Grill">Diner Grill</option>
+            <option value="Unique Meals">Unique Meals</option>
+            <option value="Pizza Posse">Pizza Posse</option>
+          </select></td>
+          <td><input type="text" name="quantity" id="quantity1"  oninput="myFunction1()" required/></td>
+          <td><input type="text" name="price" id="selectNumber1" required/></td>
+          <td><input type="text" name="total" id="total1"  required/></td>
+        </tr>
+        <tr>
+         
+          <td><select name="" id="foodlist2" onchange="foodprice2()" required>
+            <option value="">--Select--</option>
+            <option value="Curd">Curd</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Briyani">Briyani</option>
+            <option value="Diner Grill">Diner Grill</option>
+            <option value="Unique Meals">Unique Meals</option>
+            <option value="Pizza Posse">Pizza Posse</option>
+          </select></td>
+          <td><input type="text" name="quantity"   id="quantity2"  oninput="myFunction2()" required/></td>
+          <td><input type="text" name="price"   id="selectNumber2" required/></td>
+          <td><input type="text" name="total" id="total2"    required/></td>
+        </tr>
+        <tr>
+ 
+          <td><select name="" id="foodlist3" onchange="foodprice3()" required>
+            <option value="">--Select--</option>
+            <option value="Curd">Curd</option>
+            <option value="Lemon">Lemon</option>
+            <option value="Briyani">Briyani</option>
+            <option value="Diner Grill">Diner Grill</option>
+            <option value="Unique Meals">Unique Meals</option>
+            <option value="Pizza Posse">Pizza Posse</option>
+          </select></td>
+          <td><input type="text" name="quantity" id="quantity3"  oninput="myFunction3()" required/></td>
+          <td><input type="text" name="price" id="selectNumber3"required /></td>
+          <td><input type="text" name="total" id="total3"  required/></td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center" class="tol" > Total</td>
+          <td><input type="number" name="finalamt" id="finalamt"></td>
+        </tr>
+      </table>
+    </center>
+    
+      <br />
+     
+      <br />
+
+      <div class="lpay">
+        <table border="10px">
+          <tr>
+            <th><label for="" name="gst" id="gst">GST</label></th>
+            <td><select name="gstval" id="gstval" onchange="gst()" required>
+              <option value="">--Select--</option>
+              <option value=5>5%</option>
+              <option value=12>12%</option>
+              <option value=18>18%</option>
+            </select></td>
+          </tr>
+          <tr>
+            <th>
+              <label for="" name="net" id="net" class="fname"
+                >NET TOTAL</label
+              >
+            </th>
+            <td><input type="text" id="nettol" name="nettol" required/></td>
+          </tr>
+          <tr>
+            <th><label for="" name="pay" id="pay">MODE OF PAYMENT</label></th>
+            <td>
+              <select name="payment" id="payment" required>
+                <option value="">--Select--</option>
+                <option value="">CASH</option>
+                <option value="">CARD</option>
+                <option value="">UPI</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    
+
+      <br />
+      <center>
+        <input type="submit" class="btn" value="Submit" />
+        <input type="reset" class="btn" value="Reset" />
+      </center>
+    </form>
+    
+  </body>
+</html>

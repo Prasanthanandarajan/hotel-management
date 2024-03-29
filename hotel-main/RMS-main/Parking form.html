@@ -1,0 +1,216 @@
+<html>
+    <head>
+    
+        <script>
+                
+                function show()
+            {
+                var TWO_WHEELER_NO=document.getElementById("TWO_WHEELER_NO").value;
+                if(TWO_WHEELER_NO=="")
+            {
+                alert("Please Enter Two Wheelar No")
+            }
+            var OWNER_NAME=document.getElementById("OWNER_NAME").value;
+                if(OWNER_NAME=="")
+            {
+                alert("Please Enter Owner Name")
+            }
+            var MOBILE_NO=document.getElementById("MOBILE_NO").value;
+                if(MOBILE_NO=="")
+            {
+                alert("please Enter MOBILE NO")
+            }
+            }
+    </script>
+    <title>parking</title>
+    <head>
+        <style>
+            body{
+        background:url(images/hotel.jpg) no-repeat ;height:950px;
+        background-size: cover ;
+        color: white;
+        
+      }
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+        
+            .park{
+                border-radius: 5px;
+            }
+    input[type=button]
+    {
+        background-color: yellowgreen;
+        font-size: 25px;
+    }
+    input[type=reset]
+    {
+        background-color:yellowgreen;
+        font-size: 25px;
+    }
+    
+        </style>
+        <body>
+          <div class="navbar">
+   
+            <div class="subnav">
+              <button class="subnavbtn"> Hotel <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                  <a href="hotelbooking.html">Hotel Booking</a>
+                  <a href="roommaintenance.html">Room Maintenance</a>
+                  <a href="roomcancellation.html">Room Cancellation</a>
+                  <a href="reception.html">Reception </a>
+                  <a href="bar.html">Bar </a>
+                </div>
+            </div>
+        <div class="subnav">
+          <button class="subnavbtn">Food <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="bill.html">Billing</a>
+            <a href="Food_Mastry.html">Food Master</a>
+            <a href="dining.html">Dining</a>
+            <a href="parcel.html">Parcel</a>
+            <a href="online.html">Online Orders</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Accounts <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="Expenses_Entry.html">Expenses Entry</a>
+            <a href="Groceries_Entry.html">Groceries Entry</a>
+            <a href="Gas_Maintenance.html">Gas Maintenance</a>
+            <a href="Income_Entry.html">Income Entry</a>
+          <a href="Advertisement.html">Advertisement</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            RMS <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="workers application form.html">Workers Application </a>
+            <a href="veseel maintenance.html">Vessel</a>
+            <a href="workers attendance form.html">Workers Attendance</a>
+            <a href="workers salary form.html">Workers Salary</a>
+            </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Stocks <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="stock entry.html">Stock Entry</a>
+            </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            MISC. <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="Parking form.html">Parking</a>
+            
+            </div>
+        </div>
+        <a href="Login_Page.html">Logout</a>
+        </div>
+            <form>
+                <h1 align="center">PARKING GEGISTRATION FORM</h1>
+                <table align="center">
+                    <tr>
+                        <td> PARKING CHARGE</td>
+                        <td><input type="text" name="name" class="park"></input></td>
+                        </tr>
+                        <tr>
+                            <td>TWO WHEELER NO:</td>
+                            <td><input type="text" name="TWO_WHEELER_NO" id="TWO_WHEELER_NO" class="park"></input></td>
+                        </tr>
+                        <tr>
+                            <td>OWNER NAME OF VEHICLE:</td>
+                            <td><input type="text" name="OWNER_NAME" id="OWNER_NAME" class="park"></input</td>
+                        </tr>
+                        <tr>
+                            <td>OWNER MOBILE OF VEHICLE:</td>
+                            <td><input type ="text" name="MOBILE_NO "id="MOBILE_NO" class="park"></input></td>
+                        </tr>
+                        <tr>
+                            <td>NAME OF THE VEHICLE:</td>
+                            <td><input type="text" name="VEHICLE" class="park"></input></td>
+                        </tr>
+                        <tr>
+                            <td>MODE OF VEHICLE:</td>
+                            <td><input type="radio" name=" MODE_OF_VEHICLE" id=" MODE_OF_VEHICLE">2 WHEELER</input>
+                            <td><input type="radio" name=" MODE_OF_VEHICLE" id=" MODE_OF_VEHICLE">3 WHEELER</input>
+                            <td><input type="radio" name=" MODE_OF_VEHICLE" id=" MODE_OF_VEHICLE">4 WHEELER</input></td>
+                        </tr>
+                        <tr>
+                            <td>TOKEN:</td>
+                            <td><input type="text" name="token" class="park"></input></td>
+                        </tr>
+                        </table>
+                        <br><center> 
+                            <input type="button"  value="submit"  onclick="show();">
+
+                            <input type="reset" name="clear">
+                            </center>
+                        </form>
+                        </body>
+                    </html>

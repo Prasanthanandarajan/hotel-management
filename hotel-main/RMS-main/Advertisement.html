@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement</title>
+    <script src="javascript/accounts.js"></script>
+    
+    
+    <link rel="stylesheet" href="styles/styles_AD.css" />
+    <style>
+      body{
+                background:url(images/hotel.jpg)  ;
+        
+            }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+   
+    <div class="subnav">
+      <button class="subnavbtn"> Hotel <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+          <a href="hotelbooking.html">Hotel Booking</a>
+          <a href="roommaintenance.html">Room Maintenance</a>
+          <a href="roomcancellation.html">Room Cancellation</a>
+          <a href="reception.html">Reception </a>
+          <a href="bar.html">Bar </a>
+        </div>
+    </div>
+<div class="subnav">
+  <button class="subnavbtn">Food <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="bill.html">Billing</a>
+    <a href="Food_Mastry.html">Food Master</a>
+    <a href="dining.html">Dining</a>
+    <a href="parcel.html">Parcel</a>
+    <a href="online.html">Online Orders</a>
+  </div>
+</div> 
+<div class="subnav">
+  <button class="subnavbtn">Accounts <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="Expenses_Entry.html">Expenses Entry</a>
+    <a href="Groceries_Entry.html">Groceries Entry</a>
+    <a href="Gas_Maintenance.html">Gas Maintenance</a>
+    <a href="Income_Entry.html">Income Entry</a>
+  <a href="Advertisement.html">Advertisement</a>
+  </div>
+</div>
+<div class="subnav">
+  <button class="subnavbtn">
+    RMS <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="subnav-content">
+    <a href="workers application form.html">Workers Application </a>
+    <a href="veseel maintenance.html">Vessel</a>
+    <a href="workers attendance form.html">Workers Attendance</a>
+    <a href="workers salary form.html">Workers Salary</a>
+    </div>
+</div>
+<div class="subnav">
+  <button class="subnavbtn">
+    Stocks <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="subnav-content">
+    <a href="stock entry.html">Stock Entry</a>
+    </div>
+</div>
+<div class="subnav">
+  <button class="subnavbtn">
+    MISC. <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="subnav-content">
+    <a href="Parking form.html">Parking</a>
+    
+    </div>
+</div>
+<a href="Login_Page.html">Logout</a>
+</div>
+   <form action="">
+    <table border="2" class="d1" id="date">
+      <th>
+          DATE
+      </th>
+      <td>
+          <input type="date" name="date1" id="date1" required>
+      </td>
+  </table>
+    <center><h1 class="header">Advertisement</h1></center>
+    <div  class="table" class="d1">
+      <div class="row">    
+        <div class="col-1 table_header">
+              S.NO
+            </div>
+            <div class="col-2 table_header">
+              PARTICULARS
+            </div>
+            <div class="col-3 table_header">
+              AMOUNT
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1"> 
+              1.
+            </div>
+            <div class="col-2">
+                Social Media
+              </div>
+              <div class="col-3">
+              <input type="number" name="advertisement1" id="Advertisement1"  class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              2.
+            </div>
+            <div class="col-2" >
+                Notices
+              </div>
+              <div class="col-3">
+               <input type="number" name="advertisement2" id="Advertisement2" class="advertisement" oninput="adTotal()" required>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+              3.
+            </div>
+            <div class="col-2">
+                Brochures
+              </div>
+              <div class="col-3">
+              <input type="number" name="advertisement3" id="Advertisement3"  class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              4.
+            </div>
+            <div class="col-2">
+                Posters
+              </div>
+              <div class="col-3">
+              <input type="number" name="advertisement4" id="Advertisement4" class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              5.
+            </div>
+            <div class="col-2">
+                Newspaper Advertisement
+              </div>
+              <div class="col-3">
+              <input type="number" name="advertisement5" id="Advertisement5" class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              6.
+            </div>
+            <div class="col-2">
+                Vehicle Advertisement
+              </div>
+              <div class="col-3">
+             <input type="number" name="advertisement6" id="Advertisement6" class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              7.
+            </div>
+            <div class="col-2">
+              Television Advertisement
+            </div>
+            <div class="col-3">
+              <input type="number"name="advertisement7" id="Advertisement7" class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+              8.
+            </div>
+            <div class="col-2">
+                Radio Advertisement
+              </div>
+              <div class="col-3"> 
+              <input type="number" name="advertisement8" id="Advertisement8" class="advertisement" oninput="adTotal()" required>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-1" style="color: #f7c469;">
+              9.
+            </div>
+            <div class="col-2" style="color: #f7c469; font-weight: 900; font-size:20px;">
+                Total
+              </div>
+              <div class="col-3">
+              <input type="number" name="adtotal" id="adtotal"  required>
+            </div>
+          </div>
+          <center>
+        <button class="button" id="submitbutton" type="submit">Submit</button>
+        <button class="button" id="resetbutton" type="reset">Reset</button>
+      </center>  
+      </div>
+   </form>
+
+</body>
+</html>

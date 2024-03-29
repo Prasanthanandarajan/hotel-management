@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Entry</title>
+    
+    <link rel="stylesheet" href="styles/styles_EE.css" />
+    <style>
+      body{
+                background:url(images/hotel.jpg)  ;
+                
+        
+            }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+   
+        <div class="subnav">
+          <button class="subnavbtn"> Hotel <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+              <a href="hotelbooking.html">Hotel Booking</a>
+              <a href="roommaintenance.html">Room Maintenance</a>
+              <a href="roomcancellation.html">Room Cancellation</a>
+              <a href="reception.html">Reception </a>
+              <a href="bar.html">Bar </a>
+            </div>
+        </div>
+    <div class="subnav">
+      <button class="subnavbtn">Food <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="bill.html">Billing</a>
+        <a href="Food_Mastry.html">Food Master</a>
+        <a href="dining.html">Dining</a>
+        <a href="parcel.html">Parcel</a>
+        <a href="online.html">Online Orders</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Accounts <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="Expenses_Entry.html">Expenses Entry</a>
+        <a href="Groceries_Entry.html">Groceries Entry</a>
+        <a href="Gas_Maintenance.html">Gas Maintenance</a>
+        <a href="Income_Entry.html">Income Entry</a>
+      <a href="Advertisement.html">Advertisement</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        RMS <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="workers application form.html">Workers Application </a>
+        <a href="veseel maintenance.html">Vessel</a>
+        <a href="workers attendance form.html">Workers Attendance</a>
+        <a href="workers salary form.html">Workers Salary</a>
+        </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        Stocks <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="stock entry.html">Stock Entry</a>
+        </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">
+        MISC. <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="subnav-content">
+        <a href="Parking form.html">Parking</a>
+        
+        </div>
+    </div>
+    <a href="Login_Page.html">Logout</a>
+    </div>
+    <form action="">
+    <table border="2" class="d1" id="date">
+        <th>
+            DATE
+        </th>
+        <td>
+            <input type="date" name="date1" id="date1" required>
+        </td>
+    </table>
+
+    <center>
+     <div  class="Without_Responsive">
+        <h1 class="header"  >Expenses Entry</h1>
+        <div>
+        <table  border="3" class="d1">
+            <tr>
+                <th>
+                    S.NO
+                </th>
+                <th>
+                    PARTICULARS
+                </th>
+                <th>
+                    AMOUNT
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1.
+                </td>
+                <td>
+                    <input name="particular1" id="particular1" type="text" required>
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2.
+                </td>
+                <td>
+                    <input name="particular2" id="particular2" type="text" required>
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3.
+                </td>
+                <td>
+                    <input name="particular3" id="particular3" type="text" required>
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4.
+                </td>
+                <td>
+                    <input name="particular4" id="particular4" type="text" required>
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5.
+                </td>
+                <td>
+                    <input name="particular5" id="particular5" type="text" required>
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6.
+                </td>
+                <td>
+                    <input name="particular6" id="particular6" type="text">
+                </td>
+                <td> 
+                    <input name="amount" id="amount" type="number" oninput="findTotal()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7.
+                </td>
+                <td>
+                    <input name="particular7" id="particular7" type="text">
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8.
+                </td>
+                <td>
+                    <input name="particular8" id="particular8" type="text">
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9.
+                </td>
+                <td>
+                    <input name="particular9" id="particular9" type="text">
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10.
+                </td>
+                <td>
+                    <input name="particular10" id="particular10" type="text">
+                </td>
+                <td>
+                    <input name="amount" id="amount" type="number" oninput="findTotal()">
+                </td>
+            </tr>
+            <tr> 
+                <td colspan="2" style="font-weight: 900; background-color:#f7c469;color : rgb(87, 57, 18);">
+                   Total
+                </td>
+                <td>
+                    <input name="totalamount" id="totalamount" class="total-amount" type="number" >
+                </td>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <button class="button" id="submitbutton" type="submit">Submit</button>
+        <button class="button" id="resetbutton" type="reset">Reset</button>
+     </div>
+    </center>
+  </form>
+
+  <script src="javascript/accounts.js"></script>
+</body>
+</html>
